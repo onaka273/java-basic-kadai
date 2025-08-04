@@ -1,4 +1,4 @@
-package kadai_18;
+package kadai_018;
 
 public class KatoTaro_Chapter18 extends Kato_Chapter18 {
 
