@@ -3,10 +3,10 @@ package kadai_021;
 import java.util.HashMap;
 
 public class Dictionary_Chapter21 {
+		
+		private HashMap<String, String> dictionaryMap;
 	
-	public Dictionary_Chapter21() {
-	
-	HashMap<String , String> dictionaryMap = new HashMap<String , String>();
+		public Dictionary_Chapter21() {
 	dictionaryMap.put("apple" , "りんご");
 	dictionaryMap.put( "peach", "桃");
 	dictionaryMap.put( "banana", "バナナ");
@@ -19,4 +19,17 @@ public class Dictionary_Chapter21 {
 	dictionaryMap.put( "cherry", "さくらんぼ");
 	
 	}
+
+
+	public void referer(String[] wordArray) {
+        for (String word : wordArray) {
+            if (dictionaryMap.containsKey(word)) {
+                String meaning = dictionaryMap.get(word);
+                System.out.println(word + "の意味は" + meaning);
+            } else {
+                System.out.println(word + "は辞書に存在しません");
+            }
+        }
+    }	
+	
 }
